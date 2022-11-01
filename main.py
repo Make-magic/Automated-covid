@@ -10,7 +10,7 @@ delay = random.randint(60, 100)
 print(delay)
 time.sleep(delay)
 
-#signIn = {'username': os.environ["USERNAME"], #学号
+signIn = {'username': os.environ["USERNAME"], #学号
           'password': os.environ["PASSWORD"]} #登陆密码
 
 headers = {
