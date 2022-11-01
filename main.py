@@ -9,12 +9,13 @@ import random
 delay = random.randint(60, 100)
 print(delay)
 time.sleep(delay)
+User_Agent = 'Mozilla/5.0 (Linux; Android 12; Mi 10 Pro Build/SKQ1.211006.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.62 XWEB/2691 MMWEBSDK/201101 Mobile Safari/537.36 MMWEBID/9229 MicroMessenger/7.0.21.1847(0x27001545) Process/toolsmp WeChat/arm64 Weixin GPVersion/1 NetType/4G Language/zh_CN ABI/arm64'
 
 #signIn = {'username': os.environ["USERNAME"], #学号
           'password': os.environ["PASSWORD"]} #登陆密码
 
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Linux; Android 10; M2002J9E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.120 Mobile Safari/537.36',
+    'User-Agent': User_Agent,
 }
 
 conn = requests.Session()
