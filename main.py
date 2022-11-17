@@ -1,5 +1,5 @@
 import os
-import requests
+#import requests
 import json
 import lxml.html
 import re
